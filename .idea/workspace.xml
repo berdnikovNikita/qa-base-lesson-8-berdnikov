@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42553872-44e1-4828-b034-21e128fc6950" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/selenide.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/InzhenerkaLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InzhenerkaLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/InzhenerkaLoginTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/InzhenerkaLoginTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-InzhenerkaLoginTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-InzhenerkaLoginTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/InzhenerkaLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/InzhenerkaLoginTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,16 +29,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.InzhenerkaLoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.InzhenerkaLoginTest.executor": "Run",
+    "JUnit.InzhenerkaLoginTest.executor": "Run",
+    "JUnit.InzhenerkaLoginTest.loginTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.InzhenerkaLoginTest">
     <configuration name="InzhenerkaLoginTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="InzhenerkaLoginTest" />
       <module name="example-project" />
@@ -43,8 +53,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InzhenerkaLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="example-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InzhenerkaLoginTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InzhenerkaLoginTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="example-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InzhenerkaLoginTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InzhenerkaLoginTest" />
+        <item itemvalue="JUnit.InzhenerkaLoginTest.loginTest" />
         <item itemvalue="Application.InzhenerkaLoginTest" />
       </list>
     </recent_temporary>

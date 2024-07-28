@@ -1,4 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: InzhenerkaLoginTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.672 s - in InzhenerkaLoginTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.932 s <<< FAILURE! - in InzhenerkaLoginTest
+InzhenerkaLoginTest.loginTest  Time elapsed: 2.919 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 124.0.6367.91 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DeeUS-MB.local', ip: '192.168.1.31', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '19.0.1'
+Driver info: driver.version: SelenideDriver
+selenide.url: http://qa-stand-login.inzhenerka.tech/login
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: 0   chromedriver                        0x00000001025bbf48 chromedriver + 4226888
+1   chromedriver                        0x00000001025b44f4 chromedriver + 4195572
+2   chromedriver                        0x00000001021f8d68 chromedriver + 281960
+3   chromedriver                        0x0000000102224bac chromedriver + 461740
+4   chromedriver                        0x0000000102220fd8 chromedriver + 446424
+5   chromedriver                        0x000000010221e150 chromedriver + 434512
+6   chromedriver                        0x000000010225b93c chromedriver + 686396
+7   chromedriver                        0x000000010225b164 chromedriver + 684388
+8   chromedriver                        0x0000000102227f1c chromedriver + 474908
+9   chromedriver                        0x0000000102228ef4 chromedriver + 478964
+10  chromedriver                        0x000000010257d59c chromedriver + 3970460
+11  chromedriver                        0x00000001025816f0 chromedriver + 3987184
+12  chromedriver                        0x00000001025875b4 chromedriver + 4011444
+13  chromedriver                        0x00000001025822fc chromedriver + 3990268
+14  chromedriver                        0x000000010255a1c0 chromedriver + 3826112
+15  chromedriver                        0x000000010259e088 chromedriver + 4104328
+16  chromedriver                        0x000000010259e1e0 chromedriver + 4104672
+17  chromedriver                        0x00000001025adf28 chromedriver + 4169512
+18  libsystem_pthread.dylib             0x000000018cd66f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000018cd61d34 thread_start + 8
+
+	at InzhenerkaLoginTest.loginTest(InzhenerkaLoginTest.java:18)
+

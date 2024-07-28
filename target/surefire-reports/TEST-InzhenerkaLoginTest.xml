@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="InzhenerkaLoginTest" time="5.672" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="InzhenerkaLoginTest" time="2.932" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
+    <property name="webdriver.chrome.driver" value="/Users/deemounus/.cache/selenium/chromedriver/mac-arm64/114.0.5735.90/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/test-classes:/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/classes:/Users/deemounus/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/deemounus/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/deemounus/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/deemounus/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/deemounus/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/deemounus/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/deemounus/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/deemounus/.m2/repository/com/codeborne/selenide/5.25.0/selenide-5.25.0.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/deemounus/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/deemounus/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/deemounus/.m2/repository/io/github/bonigarcia/webdrivermanager/5.0.3/webdrivermanager-5.0.3.jar:/Users/deemounus/.m2/repository/com/google/code/gson/gson/2.8.8/gson-2.8.8.jar:/Users/deemounus/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/deemounus/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/deemounus/.m2/repository/com/squareup/okhttp3/okhttp/3.12.13/okhttp-3.12.13.jar:/Users/deemounus/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/deemounus/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/deemounus/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1/httpclient5-5.1.jar:/Users/deemounus/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.1/httpcore5-5.1.1.jar:/Users/deemounus/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/deemounus/.m2/repository/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar:/Users/deemounus/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/deemounus/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/deemounus/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/deemounus/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/deemounus/.m2/repository/com/google/errorprone/error_prone_annotations/2.7.1/error_prone_annotations-2.7.1.jar:/Users/deemounus/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/deemounus/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/deemounus/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/deemounus/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:"/>
     <property name="java.vm.vendor" value="Azul Systems, Inc."/>
@@ -13,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-19.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/surefire/surefirebooter13630049146857924912.jar /Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/surefire 2024-07-28T11-28-20_407-jvmRun1 surefire818121797048449484tmp surefire_010828318894299022198tmp"/>
+    <property name="sun.java.command" value="/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/surefire/surefirebooter4782901528779089519.jar /Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/surefire 2024-07-28T11-50-39_975-jvmRun1 surefire7917201053836947118tmp surefire_012478208942911724280tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/test-classes:/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/classes:/Users/deemounus/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/deemounus/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/deemounus/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/deemounus/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/deemounus/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/deemounus/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/deemounus/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/deemounus/.m2/repository/com/codeborne/selenide/5.25.0/selenide-5.25.0.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/deemounus/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/deemounus/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/deemounus/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/deemounus/.m2/repository/io/github/bonigarcia/webdrivermanager/5.0.3/webdrivermanager-5.0.3.jar:/Users/deemounus/.m2/repository/com/google/code/gson/gson/2.8.8/gson-2.8.8.jar:/Users/deemounus/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/deemounus/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/deemounus/.m2/repository/com/squareup/okhttp3/okhttp/3.12.13/okhttp-3.12.13.jar:/Users/deemounus/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/deemounus/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/deemounus/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1/httpclient5-5.1.jar:/Users/deemounus/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.1/httpcore5-5.1.1.jar:/Users/deemounus/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/deemounus/.m2/repository/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar:/Users/deemounus/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/deemounus/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/deemounus/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/deemounus/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/deemounus/.m2/repository/com/google/errorprone/error_prone_annotations/2.7.1/error_prone_annotations-2.7.1.jar:/Users/deemounus/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/deemounus/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/deemounus/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/deemounus/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:"/>
@@ -30,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/surefire/surefirebooter13630049146857924912.jar"/>
+    <property name="surefire.real.class.path" value="/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin/target/surefire/surefirebooter4782901528779089519.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.1+10"/>
@@ -48,7 +49,6 @@
     <property name="java.version" value="19.0.1"/>
     <property name="user.dir" value="/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin"/>
     <property name="os.arch" value="aarch64"/>
-    <property name="webdriver.gecko.driver" value="/Users/deemounus/.cache/selenium/geckodriver/mac-arm64/0.34.0-macos/geckodriver"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/deemounus/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -60,23 +60,45 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="loginTest" classname="InzhenerkaLoginTest" time="5.665">
+  <testcase name="loginTest" classname="InzhenerkaLoginTest" time="2.919">
+    <error type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 124.0.6367.91 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DeeUS-MB.local', ip: '192.168.1.31', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '19.0.1'
+Driver info: driver.version: SelenideDriver
+selenide.url: http://qa-stand-login.inzhenerka.tech/login
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: 0   chromedriver                        0x00000001025bbf48 chromedriver + 4226888
+1   chromedriver                        0x00000001025b44f4 chromedriver + 4195572
+2   chromedriver                        0x00000001021f8d68 chromedriver + 281960
+3   chromedriver                        0x0000000102224bac chromedriver + 461740
+4   chromedriver                        0x0000000102220fd8 chromedriver + 446424
+5   chromedriver                        0x000000010221e150 chromedriver + 434512
+6   chromedriver                        0x000000010225b93c chromedriver + 686396
+7   chromedriver                        0x000000010225b164 chromedriver + 684388
+8   chromedriver                        0x0000000102227f1c chromedriver + 474908
+9   chromedriver                        0x0000000102228ef4 chromedriver + 478964
+10  chromedriver                        0x000000010257d59c chromedriver + 3970460
+11  chromedriver                        0x00000001025816f0 chromedriver + 3987184
+12  chromedriver                        0x00000001025875b4 chromedriver + 4011444
+13  chromedriver                        0x00000001025822fc chromedriver + 3990268
+14  chromedriver                        0x000000010255a1c0 chromedriver + 3826112
+15  chromedriver                        0x000000010259e088 chromedriver + 4104328
+16  chromedriver                        0x000000010259e1e0 chromedriver + 4104672
+17  chromedriver                        0x00000001025adf28 chromedriver + 4169512
+18  libsystem_pthread.dylib             0x000000018cd66f94 _pthread_start + 136
+19  libsystem_pthread.dylib             0x000000018cd61d34 thread_start + 8
+
+	at InzhenerkaLoginTest.loginTest(InzhenerkaLoginTest.java:18)
+]]></error>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1722155302965	geckodriver	INFO	Listening on 127.0.0.1:24921
-1722155303037	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... e" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/g0/m3fvjwk57x99ns0295m_nf140000gn/T/rust_mozprofileTpPFai"
-*** You are running in headless mode.
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1722155303431	Marionette	INFO	Marionette enabled
-1722155303713	Marionette	INFO	Listening on port 64841
-1722155303809	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-Jul 28, 2024 11:28:24 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-console.warn: LoginRecipes: "Falling back to a synchronous message for: http://qa-stand-login.inzhenerka.tech."
-console.warn: LoginRecipes: "Falling back to a synchronous message for: http://qa-stand-login.inzhenerka.tech."
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 12242
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
 ]]></system-err>
   </testcase>
 </testsuite>

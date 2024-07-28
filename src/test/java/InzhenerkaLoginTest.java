@@ -1,16 +1,32 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import static com.codeborne.selenide.Selenide.*;
 
 public class InzhenerkaLoginTest {
+    @BeforeAll
+    public static void setUp() {
+        Properties properties = new Properties();
+        try {
+            properties.load(new FileInputStream("src/test/resources/selenide.properties"));
+            Configuration.browser = properties.getProperty("selenide.browser");
+            Configuration.startMaximized = Boolean.parseBoolean(properties.getProperty("selenide.startMaximized"));
+            Configuration.headless = Boolean.parseBoolean(properties.getProperty("selenide.headless"));
+            Configuration.remote = properties.getProperty("selenide.remote");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Test
     public void loginTest() {
-        Configuration.browser= "firefox";
-        Configuration.startMaximized = true;
-        Configuration.headless = true;
-        //Configuration.remote = "http://remote-webdriver-server:4444/wd/hub";
 
         // Открыть страницу входа
         Selenide.open("http://qa-stand-login.inzhenerka.tech/login");
