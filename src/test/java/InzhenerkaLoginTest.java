@@ -10,6 +10,8 @@ public class InzhenerkaLoginTest {
         Configuration.browser= "firefox";
         Configuration.startMaximized = true;
         Configuration.headless = true;
+        //Configuration.remote = "http://remote-webdriver-server:4444/wd/hub";
+
         // Открыть страницу входа
         Selenide.open("http://qa-stand-login.inzhenerka.tech/login");
 
