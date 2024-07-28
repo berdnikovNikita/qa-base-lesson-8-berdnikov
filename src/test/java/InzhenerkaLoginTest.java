@@ -1,12 +1,15 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 
 public class InzhenerkaLoginTest {
-    public static void main(String[] args) {
+    @Test
+    public void loginTest() {
         Configuration.browser= "firefox";
         Configuration.startMaximized = true;
+        Configuration.headless = true;
         // Открыть страницу входа
         Selenide.open("http://qa-stand-login.inzhenerka.tech/login");
 
