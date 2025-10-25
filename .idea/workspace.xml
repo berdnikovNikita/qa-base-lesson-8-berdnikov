@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42553872-44e1-4828-b034-21e128fc6950" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/selenide.properties" afterDir="false" />
+    <list default="true" id="42553872-44e1-4828-b034-21e128fc6950" name="Changes" comment="Added 2 new tests: for qa-stand and for uploading file to csm-testcenter.&#10;Disabled former test for qa-stand">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/InzhenerkaLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InzhenerkaLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/InzhenerkaLoginTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/InzhenerkaLoginTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-InzhenerkaLoginTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-InzhenerkaLoginTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/InzhenerkaLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/InzhenerkaLoginTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +16,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;berdnikovNikita&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/berdnikovNikita/qa-base-lesson-8-yarygin.git",
+    "accountId": "431120e5-d350-4bc7-b583-f798d4d7cb87"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -34,14 +45,23 @@
     "Application.InzhenerkaLoginTest.executor": "Run",
     "JUnit.InzhenerkaLoginTest.executor": "Run",
     "JUnit.InzhenerkaLoginTest.loginTest.executor": "Run",
+    "JUnit.InzhenerkaLoginTest.textSelectorsLogin.executor": "Run",
+    "JUnit.InzhenerkaLoginTest.uploadFileSuccess.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/deemounus/IdeaProjects/qa-base-lesson-8-yarygin"
+    "last_opened_file_path": "/Users/user/Documents/Tester/MyProjects/qa-base-lesson-8-yarygin/src/test/resources",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/res" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/resources" />
     </key>
   </component>
@@ -72,9 +92,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InzhenerkaLoginTest.textSelectorsLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="example-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InzhenerkaLoginTest" />
+      <option name="METHOD_NAME" value="textSelectorsLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InzhenerkaLoginTest.uploadFileSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="example-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InzhenerkaLoginTest" />
+      <option name="METHOD_NAME" value="uploadFileSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.InzhenerkaLoginTest" />
+        <item itemvalue="JUnit.InzhenerkaLoginTest.uploadFileSuccess" />
+        <item itemvalue="JUnit.InzhenerkaLoginTest.textSelectorsLogin" />
         <item itemvalue="JUnit.InzhenerkaLoginTest.loginTest" />
         <item itemvalue="Application.InzhenerkaLoginTest" />
       </list>
@@ -89,6 +131,23 @@
       <option name="presentableId" value="Default" />
       <updated>1722077487035</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added 2 new tests: for qa-stand and for uploading file to csm-testcenter.&#10;Disabled former test for qa-stand">
+      <option name="closed" value="true" />
+      <created>1761404279779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761404279779</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added 2 new tests: for qa-stand and for uploading file to csm-testcenter.&#10;Disabled former test for qa-stand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 2 new tests: for qa-stand and for uploading file to csm-testcenter.&#10;Disabled former test for qa-stand" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/qa_base_lesson_8_yarygin$InzhenerkaLoginTest_textSelectorsLogin.ic" NAME="InzhenerkaLoginTest.textSelectorsLogin Coverage Results" MODIFIED="1761387578664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/qa_base_lesson_8_yarygin$InzhenerkaLoginTest_uploadFileSuccess.ic" NAME="InzhenerkaLoginTest.uploadFileSuccess Coverage Results" MODIFIED="1761389872185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
