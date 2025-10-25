@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.time.Duration;
 import java.util.Properties;
 
 import static com.codeborne.selenide.Condition.*;
@@ -62,7 +63,7 @@ public class InzhenerkaLoginTest {
         // Проверка существования поля логина, CSS-селектор
         if ($("#username").exists()) {
             // Проверка видимости и непредзаполненности поля логина, XPath-селектор
-            $(By.xpath("//input[@name='username']")).shouldBe(visible);
+            $(By.xpath("//input[@name='username']")).shouldBe(visible, Duration.ofSeconds(5));
             $(By.xpath("//input[@name='username']")).shouldBe(empty);
             // Ввод логина, By-селектор
             $(By.name("username")).setValue("admin");
@@ -90,7 +91,7 @@ public class InzhenerkaLoginTest {
         // Проверка существования кнопки выхода, XPath-селектор
         if ($(By.xpath("//a[@class='btn btn-danger w-100']")).exists()) {
             // Проверка видимости и текста кнопки, By+CSS-селекторы
-            $(By.className("w-100")).shouldBe(visible);
+            $(By.className("w-100")).shouldBe(visible, Duration.ofSeconds(5));
             $(".btn.btn-danger.w-100").shouldHave(text("Выйти"));
 
             // Выход из системы, текстовый селектор ~
@@ -104,46 +105,28 @@ public class InzhenerkaLoginTest {
      */
     @Test
     public void uploadFileSuccess() {
-        //Хардкод SHA256 и размера тестового файла
-        String testSHA256 = "8ACDA41C2C63CB3FAFC9E856DC77F685F6CC7B8D7EB94D589EB120FDE1D8DDDB";
-        int testByteSize = 515221;
-        SelenideElement httpsBlock = null;
-        SelenideElement httpsInput = null;
-        SelenideElement httpsUpload = null;
-        SelenideElement resultBlock = null;
+        //Хардкод данных тестового файла test-image.png
+        final String fileSHA256 = "8ACDA41C2C63CB3FAFC9E856DC77F685F6CC7B8D7EB94D589EB120FDE1D8DDDB";
+        final int fileByteSize = 515221;
+        final String fileName = "test-image.png";
 
         // Открыть страницу загрузки
         Selenide.open("https://www.csm-testcenter.org/test?do=show&subdo=common&test=file_upload");
 
         // Найти div-блок для отправки через HTTPS
-        try {
-            httpsBlock = $(By.xpath("//div[@id='item'][h1[normalize-space()='File upload via POST (HTTPS)']]"));
-        } catch (com.codeborne.selenide.ex.ElementNotFound e) {
-            org.junit.jupiter.api.Assertions.fail("HTTPS upload block was not found!");
-        }
-
-        // Проверить видимость блока
-        httpsBlock.shouldBe(visible);
+        SelenideElement httpsBlock = $(By.xpath("//div[@id='item'][h1[normalize-space()='File upload via POST (HTTPS)']]"))
+                .should(appear, Duration.ofSeconds(5));
 
         // Найти поле загрузки файла
-        try {
-            httpsInput = httpsBlock.$("input[type='file']");
-        } catch (com.codeborne.selenide.ex.ElementNotFound e) {
-            org.junit.jupiter.api.Assertions.fail("HTTPS file input was not found!");
-        }
-
-        // Проверить видимость поля
-        httpsInput.shouldBe(visible);
+        SelenideElement httpsInput = httpsBlock.$("input[type='file']")
+                .should(appear);
 
         // Загрузить в поле файл
-        httpsInput.uploadFile(new File("src/test/resources/test-image.png"));
+        httpsInput.uploadFile(new File("src/test/resources/" + fileName));
 
         // Найти кнопку отправки файла
-        try {
-            httpsUpload = httpsBlock.$("input[name='https_submit']");
-        } catch (com.codeborne.selenide.ex.ElementNotFound e) {
-            org.junit.jupiter.api.Assertions.fail("HTTPS upload button was not found!");
-        }
+        SelenideElement httpsUpload = httpsBlock.$("input[name='https_submit']")
+                .should(appear);
 
         // Проверить видимость и текст кнопки
         httpsUpload.shouldBe(visible);
@@ -153,25 +136,23 @@ public class InzhenerkaLoginTest {
         httpsUpload.click();
 
         // Найти div-блок с результатами загрузки
-        try {
-            resultBlock = $(By.xpath("//div[h1[normalize-space()='Information about the uploaded data']]"));
-        } catch (com.codeborne.selenide.ex.ElementNotFound e) {
-            org.junit.jupiter.api.Assertions.fail("Upload results block was not found!");
-        }
-
-        // Проверить видимость блока
-        resultBlock.shouldBe(visible);
+        SelenideElement resultBlock = $(By.xpath("//div[h1[normalize-space()='Information about the uploaded data']]"))
+                .should(appear, Duration.ofSeconds(5));
 
         // Проверить статус загрузки
-        resultBlock.$(By.xpath(".//tr[td[normalize-space()='Status']]/td[2]")).shouldHave(text("File successfully uploaded"));
+        resultBlock.$(By.xpath(".//tr[td[normalize-space()='Status']]/td[2]"))
+                .shouldHave(text("File successfully uploaded"));
 
         // Сверить название файла
-        resultBlock.$(By.xpath(".//tr[td[normalize-space()='Filename']]/td[2]")).shouldHave(text("test-image.png"));
+        resultBlock.$(By.xpath(".//tr[td[normalize-space()='Filename']]/td[2]"))
+                .shouldHave(text("test-image.png"));
 
         // Сверить размер файла
-        resultBlock.$(By.xpath(".//tr[td[normalize-space()='Filesize']]/td[2]")).shouldHave(text(testByteSize + " bytes"));
+        resultBlock.$(By.xpath(".//tr[td[normalize-space()='Filesize']]/td[2]"))
+                .shouldHave(text(fileByteSize + " bytes"));
 
         // Сверить хэш файла
-        resultBlock.$(By.xpath(".//tr[td[normalize-space()='Content SHA256']]/td[2]")).shouldHave(text(testSHA256));
+        resultBlock.$(By.xpath(".//tr[td[normalize-space()='Content SHA256']]/td[2]"))
+                .shouldHave(text(fileSHA256));
     }
 }

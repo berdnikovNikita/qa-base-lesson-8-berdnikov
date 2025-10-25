@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42553872-44e1-4828-b034-21e128fc6950" name="Changes" comment="Added 2 new tests: for qa-stand and for uploading file to csm-testcenter.&#10;Disabled former test for qa-stand">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/InzhenerkaLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InzhenerkaLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/InzhenerkaLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/InzhenerkaLoginTest.class" afterDir="false" />
     </list>
@@ -28,7 +27,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/berdnikovNikita/qa-base-lesson-8-yarygin.git",
+    "url": "https://github.com/berdnikovNikita/qa-base-lesson-8-berdnikov.git",
     "accountId": "431120e5-d350-4bc7-b583-f798d4d7cb87"
   }
 }]]></component>
@@ -47,6 +46,7 @@
     "JUnit.InzhenerkaLoginTest.loginTest.executor": "Run",
     "JUnit.InzhenerkaLoginTest.textSelectorsLogin.executor": "Run",
     "JUnit.InzhenerkaLoginTest.uploadFileSuccess.executor": "Run",
+    "Maven.example-project [versions:use-latest-releases].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -64,6 +64,11 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/resources" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn versions:use-latest-releases" />
+    </option>
   </component>
   <component name="RunManager" selected="JUnit.InzhenerkaLoginTest">
     <configuration name="InzhenerkaLoginTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
